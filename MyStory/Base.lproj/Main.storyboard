@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KF7-yx-ZIk">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Captain America-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="362-BZ-FCF">
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="d2X-T4-mCU">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1003"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Captain-america-1" translatesAutoresizingMaskIntoConstraints="NO" id="LBi-sm-Lxa">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="Zep-fC-9f6"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpb-su-76s">
+                                                <rect key="frame" x="0.0" y="300" width="393" height="34.333333333333314"/>
+                                                <gestureRecognizers/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="My background"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Dxt-lP-btt" appends="YES" id="Ydu-9a-xtr"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Captain-America-Steve-Rogers-Reading-Order" translatesAutoresizingMaskIntoConstraints="NO" id="nci-VN-fZ2">
+                                                <rect key="frame" x="0.0" y="334.33333333333331" width="393" height="299.99999999999994"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="hLX-TF-l8K"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixd-oC-e6B">
+                                                <rect key="frame" x="0.0" y="634.33333333333337" width="393" height="34.333333333333371"/>
+                                                <gestureRecognizers/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="My powers"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="D9B-Sk-WhY" appends="YES" id="zcJ-IJ-afI"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SQEX_Blog_Cap_Image2-2p6omydfp" translatesAutoresizingMaskIntoConstraints="NO" id="XR8-Lt-9e7">
+                                                <rect key="frame" x="0.0" y="668.66666666666663" width="393" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="H5U-fe-c35"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIc-PX-ISo">
+                                                <rect key="frame" x="0.0" y="968.66666666666674" width="393" height="34.333333333333371"/>
+                                                <gestureRecognizers/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="My suit"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="rVw-B4-ZJC" appends="YES" id="ZTJ-wZ-U7y"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="d2X-T4-mCU" secondAttribute="bottom" id="0NZ-FA-zHY"/>
+                                    <constraint firstItem="d2X-T4-mCU" firstAttribute="leading" secondItem="362-BZ-FCF" secondAttribute="leading" id="8HE-vN-rqw"/>
+                                    <constraint firstAttribute="trailing" secondItem="d2X-T4-mCU" secondAttribute="trailing" id="Rli-Gn-uZK"/>
+                                    <constraint firstItem="d2X-T4-mCU" firstAttribute="top" secondItem="362-BZ-FCF" secondAttribute="top" id="eln-UP-XQw"/>
+                                    <constraint firstItem="d2X-T4-mCU" firstAttribute="width" secondItem="362-BZ-FCF" secondAttribute="width" id="gMp-5Z-DFf"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="9Bo-hC-usS"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="To5-vk-gaK"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="362-BZ-FCF" secondAttribute="bottom" id="AdT-ge-t4m"/>
+                            <constraint firstItem="362-BZ-FCF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Zyi-MF-rc4"/>
+                            <constraint firstItem="362-BZ-FCF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hqM-kp-4KQ"/>
+                            <constraint firstItem="362-BZ-FCF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qNI-lk-2wC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Captain America" id="LUn-7R-odd"/>
+                    <connections>
+                        <segue destination="5FU-2S-2QA" kind="show" identifier="detailSegue" id="I43-ck-DRT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Dxt-lP-btt">
+                    <connections>
+                        <action selector="didTap:" destination="BYZ-38-t0r" id="uuv-yB-jbh"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="D9B-Sk-WhY">
+                    <connections>
+                        <action selector="didTap:" destination="BYZ-38-t0r" id="tIH-bC-F7z"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="rVw-B4-ZJC">
+                    <connections>
+                        <action selector="didTap:" destination="BYZ-38-t0r" id="s7y-b7-QIz"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="hzV-rO-fZw">
+            <objects>
+                <viewController id="5FU-2S-2QA" customClass="DetailViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lFl-5X-Ps2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sO4-tQ-jdh">
+                                <rect key="frame" x="12" y="163.66666666666666" width="369" height="149.99999999999997"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="1b9-zk-dbq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEC-jT-ND6">
+                                <rect key="frame" x="12" y="321.66666666666674" width="369" height="476.33333333333326"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cir-H5-dbH">
+                                <rect key="frame" x="12" y="115.00000000000001" width="369" height="40.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" systemColor="tintColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="keh-Zc-wxM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cir-H5-dbH" firstAttribute="top" secondItem="keh-Zc-wxM" secondAttribute="top" constant="12" id="1D4-rs-qj5"/>
+                            <constraint firstItem="keh-Zc-wxM" firstAttribute="trailing" secondItem="sO4-tQ-jdh" secondAttribute="trailing" constant="12" id="KEE-xe-6AN"/>
+                            <constraint firstItem="keh-Zc-wxM" firstAttribute="bottom" secondItem="jEC-jT-ND6" secondAttribute="bottom" constant="20" id="LMd-eF-hXx"/>
+                            <constraint firstItem="Cir-H5-dbH" firstAttribute="leading" secondItem="keh-Zc-wxM" secondAttribute="leading" constant="12" id="T7W-iT-pmT"/>
+                            <constraint firstItem="sO4-tQ-jdh" firstAttribute="leading" secondItem="keh-Zc-wxM" secondAttribute="leading" constant="12" id="UeC-la-1ds"/>
+                            <constraint firstItem="jEC-jT-ND6" firstAttribute="leading" secondItem="keh-Zc-wxM" secondAttribute="leading" constant="12" id="YZP-7N-hc0"/>
+                            <constraint firstItem="keh-Zc-wxM" firstAttribute="trailing" secondItem="Cir-H5-dbH" secondAttribute="trailing" constant="12" id="bdO-Cy-IFF"/>
+                            <constraint firstItem="sO4-tQ-jdh" firstAttribute="top" secondItem="Cir-H5-dbH" secondAttribute="bottom" constant="8" symbolic="YES" id="fb0-31-yRd"/>
+                            <constraint firstItem="keh-Zc-wxM" firstAttribute="trailing" secondItem="jEC-jT-ND6" secondAttribute="trailing" constant="12" id="w3E-OL-uiP"/>
+                            <constraint firstItem="jEC-jT-ND6" firstAttribute="top" secondItem="sO4-tQ-jdh" secondAttribute="bottom" constant="8" symbolic="YES" id="xBg-nn-sop"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Uvg-km-4Qi"/>
+                    <connections>
+                        <outlet property="imageLabel" destination="sO4-tQ-jdh" id="rZ7-d4-LlM"/>
+                        <outlet property="infoLabel" destination="jEC-jT-ND6" id="xhu-Vs-Kib"/>
+                        <outlet property="titleLabel" destination="Cir-H5-dbH" id="rgc-gd-t5V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S57-Ym-5km" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1732" y="-2"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jcG-bD-kPw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KF7-yx-ZIk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OpL-di-bcy">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1sy-ST-L26"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nPa-T0-cNf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Captain-America-Steve-Rogers-Reading-Order" width="500" height="333.33334350585938"/>
+        <image name="Captain-america-1" width="341.33334350585938" height="256"/>
+        <image name="SQEX_Blog_Cap_Image2-2p6omydfp" width="640" height="360"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
